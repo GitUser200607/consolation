@@ -17,53 +17,63 @@ namespace Consolation
         /// <summary>
         /// The hotkey to show and hide the console window.
         /// </summary>
+        [Tooltip("The hotkey to show and hide the console window.")]
         public KeyCode toggleKey = KeyCode.BackQuote;
 
         /// <summary>
         /// Whether to open as soon as the game starts.
         /// </summary>
+        [Tooltip("Whether to open as soon as the game starts.")]        
         public bool openOnStart = false;
 
         /// <summary>
         /// Whether to open the window by shaking the device (mobile-only).
         /// </summary>
+        [Tooltip("Whether to open the window by shaking the device (mobile-only).")]
         public bool shakeToOpen = true;
 
         /// <summary>
         /// Also require touches while shaking to avoid accidental shakes.
         /// </summary>
+        [Tooltip("Also require touches while shaking to avoid accidental shakes.")]        
         public bool shakeRequiresTouch = false;
 
         /// <summary>
         /// The (squared) acceleration above which the window should open.
         /// </summary>
+        [Tooltip("The (squared) acceleration above which the window should open.")]        
         public float shakeAcceleration = 3f;
 
         /// <summary>
         /// The number of seconds that have to pass between visibility toggles.
         /// This threshold prevents closing again while shaking to open.
         /// </summary>
+        [Tooltip("The number of seconds that have to pass between visibility toggles.\nThis threshold prevents closing again while shaking to open.")]        
         public float toggleThresholdSeconds = .5f;
         float lastToggleTime;
 
         /// <summary>
         /// Whether to only keep a certain number of logs, useful if memory usage is a concern.
         /// </summary>
+        [Tooltip("Whether to only keep a certain number of logs, useful if memory usage is a concern.")]        
         public bool restrictLogCount = false;
 
         /// <summary>
         /// Number of logs to keep before removing old ones.
         /// </summary>
+        [Tooltip("Number of logs to keep before removing old ones.")]        
         public int maxLogCount = 1000;
 
         /// <summary>
         /// Font size to display log entries with.
         /// </summary>
+        [Tooltip("Font size to display log entries with.")]        
         public int logFontSize = 12;
 
         /// <summary>
         /// Amount to scale UI by.
         /// </summary>
+        [Tooltip("Amount to scale UI by.")]        
         public float scaleFactor = 1f;
 
         #endregion
